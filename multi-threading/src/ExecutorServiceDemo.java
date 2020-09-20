@@ -28,7 +28,7 @@ public class ExecutorServiceDemo {
     public static void main(String args[]) throws Exception{
         String sourceFile1 = "a.txt";
         String sourceFile2 = "b.txt";
-        String destinationFile1 = "c.txt";
+        String destinationFile1 = "sample/c.txt";
         String destinationFile2 = "d.txt";
 //        // Create two threads and submit them to start method
 //        Thread t1 = new Thread(new CopyTask(sourceFile1, destinationFile1));
