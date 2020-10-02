@@ -7,6 +7,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 
 /**
  * ReadWrite lock should be preferred over synchronized methods and blocks
+ * Main benifit of read write lock is that if we have acquired write lock over a resource still read can happen.
  */
 class ReadWriteSample {
     private int x;
