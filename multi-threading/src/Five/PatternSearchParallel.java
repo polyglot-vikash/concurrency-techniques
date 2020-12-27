@@ -1,3 +1,5 @@
+package Five;
+
 import com.example.utils.PatternFinder;
 
 import java.io.File;
@@ -52,6 +54,9 @@ public class PatternSearchParallel {
         System.out.println("Time taken to complete in milli seconds " + (endTime - startTime));
     }
 
+    // Note: We don't need to dp this wait for all though
+    // Example: if we call future.get() on one thread still other threads will keep executing
+    // Here we have just designed an experiment by doing a wait for all
     private static void waitForAll(Map<String, Object> resultMap) throws Exception {
         Set<String> keys = resultMap.keySet();
         List<Future<List<Integer>>> futures = resultMap.values().stream().map(future -> (Future<List<Integer>>) future).collect(Collectors.toList());

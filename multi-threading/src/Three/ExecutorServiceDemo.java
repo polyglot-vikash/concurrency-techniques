@@ -1,3 +1,5 @@
+package Three;
+
 import com.example.io.utils.IOUtils;
 
 import java.util.concurrent.ExecutorService;
@@ -28,12 +30,13 @@ public class ExecutorServiceDemo {
     public static void main(String args[]) throws Exception{
         String sourceFile1 = "a.txt";
         String sourceFile2 = "b.txt";
-        String destinationFile1 = "sample/c.txt";
+        String destinationFile1 = "c.txt";
         String destinationFile2 = "d.txt";
+        /** Old approach */
 //        // Create two threads and submit them to start method
-//        Thread t1 = new Thread(new CopyTask(sourceFile1, destinationFile1));
+//        Thread t1 = new Thread(new Three.CopyTask(sourceFile1, destinationFile1));
 //        t1.start();
-//        Thread t2 = new Thread(new CopyTask(sourceFile2, destinationFile2));
+//        Thread t2 = new Thread(new Three.CopyTask(sourceFile2, destinationFile2));
 //        t2.start();
 //        System.out.println("Done copying files...");
 
